@@ -6,7 +6,7 @@
 /*   By: ahbilla <ahbilla@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 22:07:19 by ahbilla           #+#    #+#             */
-/*   Updated: 2025/01/16 22:07:37 by ahbilla          ###   ########.fr       */
+/*   Updated: 2025/01/17 15:11:05 by ahbilla          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 int	ft_strcmp(char *s1, char *s2)
 {
 	int i;
-
+    if (s1 == NULL || s2 == NULL)
+        return -1;
+	
 	i = 0;
 	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0')
 		i++;

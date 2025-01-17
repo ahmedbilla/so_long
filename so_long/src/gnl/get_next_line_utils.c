@@ -6,11 +6,11 @@
 /*   By: ahbilla <ahbilla@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 14:11:59 by ahbilla           #+#    #+#             */
-/*   Updated: 2024/12/15 21:48:16 by ahbilla          ###   ########.fr       */
+/*   Updated: 2025/01/17 13:52:55 by ahbilla          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../../includes/get_next_line.h"
 
 size_t	ft_strlen(const char *str)
 {

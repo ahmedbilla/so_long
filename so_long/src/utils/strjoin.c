@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   strjoin.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahbilla <ahbilla@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 23:41:05 by ahbilla           #+#    #+#             */
-/*   Updated: 2025/01/16 23:41:31 by ahbilla          ###   ########.fr       */
+/*   Updated: 2025/01/17 18:27:34 by ahbilla          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/so_long.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+size_t	strline(const char *str)
+{
+	size_t	i;
+
+	i = 0;
+	if (!str)
+		return (0);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+
+char	*strjoin(char const *s1, char const *s2)
 {
 	char	*arr;
 	size_t	i;
@@ -22,7 +36,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	j = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	arr = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	arr = (char *)malloc(sizeof(char) * (strline(s1) + strline(s2) + 1));
 	if (!arr)
 		return (NULL);
 	while (s1[i] != '\0')

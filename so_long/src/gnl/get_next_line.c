@@ -6,11 +6,11 @@
 /*   By: ahbilla <ahbilla@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/11 10:57:42 by ahbilla           #+#    #+#             */
-/*   Updated: 2024/12/16 02:35:41 by ahbilla          ###   ########.fr       */
+/*   Updated: 2025/01/17 13:52:49 by ahbilla          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../../includes/get_next_line.h"
 
 static void	read_from_file(ssize_t *bytesread, char	**leftover, int fd)
 {

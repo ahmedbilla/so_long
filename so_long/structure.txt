@@ -1,0 +1,26 @@
+so_long/
+├── assets/
+│   ├── sprites/          # Sprites for walls, player, collectibles, etc.
+│   ├── maps/             # Map files (*.ber)
+├── includes/             # Header files
+│   ├── so_long.h         # Main project header
+│   ├── get_next_line.h   # Header for get_next_line
+├── src/
+│   ├── main.c            # Entry point of the program
+│   ├── map/              # Map-related logic
+│   │   ├── parse_map.c   # Parse and validate the map
+│   │   ├── validate_map.c # Check map validity
+│   │   ├── free_map.c    # Free allocated map memory
+│   ├── game/             # Game logic
+│   │   ├── init_game.c   # Initialize game variables
+│   │   ├── handle_input.c # Handle player input
+│   │   ├── update_game.c  # Update game state
+│   │   ├── render_game.c  # Render game graphics
+│   ├── utils/            # Utility functions
+│   │   ├── ft_split.c    # String splitting
+│   │   ├── ft_strutils.c # String utilities
+│   │   ├── error_handling.c # Print errors and exit program
+│   ├── gnl/              # get_next_line integration
+│       ├── get_next_line.c   # Main GNL logic
+│       ├── get_next_line_utils.c # GNL helper functions
+├── Makefile              # Build system
